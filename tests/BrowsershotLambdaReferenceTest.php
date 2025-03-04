@@ -21,6 +21,7 @@ afterAll(function () {
     }
 });
 
+
 it('generates reference hello-world-with-smileys.png', function () {
     $this->assertFileDoesNotExist('example.png');
     BrowsershotLambda::html('<h1 style="font-weight: 400;">Hello world!! 👋🦫🫠</h1>')->save('example.png');
